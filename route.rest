@@ -1,0 +1,38 @@
+//Get all pets
+GET http://localhost:3000/pets
+
+###
+
+//Get one pet
+GET http://localhost:3000/pets/63d05df49843b4c6ad426994
+
+###
+
+//Create one pet
+POST http://localhost:3000/pets
+Content-Type: application/json
+
+{
+    "name": "Molly",
+    "type": "dog",
+
+}
+
+###
+
+//Delete one pet
+
+DELETE http://localhost:3000/pets/63d05df49843b4c6ad426994
+
+###
+
+//Update one pet
+
+PATCH http://localhost:3000/pets/63d05ed6ee7b7032db8403f
+Content-Type: application/json
+
+{
+    "name": "Rango",
+    "type": "crocodile"
+
+}
